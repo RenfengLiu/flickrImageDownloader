@@ -1,4 +1,6 @@
+#!/usr/bin/env python
 import os 
+import sys
 from urlparse import urlparse
 import codecs
 from flickr_api import *
@@ -36,7 +38,7 @@ def search_and_download(image_label):
 		os.makedirs(image_label)
 	tags_file_path = os.path.join(image_label, image_label+'_userTags.txt')
 	tags_file = codecs.open(tags_file_path, 'wb+', "utf-8")	
-	photos = photos_search(text = image_label, content_type=1, sort='relevance')
+	photos = photos_search(text = image_label, content_type=1, sort='relevance', per_page=30)
 	for idx, photo in enumerate(photos):
 		print 'downloading %d images... of %s'%(idx+1, image_label[:-1])
 		download_image(photo, tags_file, image_label)
@@ -45,9 +47,15 @@ def search_and_download(image_label):
 def readTasks(fileName):
 	f = open(fileName, 'r')
 	for line in f:
+		if line[0]=='#':
+			continue
 		print 'Begine to down load image of ', line
 		search_and_download(line)
 
 if __name__ == '__main__':
-	readTasks('foodlist.txt')
+	if len(sys.argv) != 2:
+		print 'Usage: %s [food list file]'
+	else:
+		foodlist = sys.argv[1]
+		readTasks(foodlist)
    

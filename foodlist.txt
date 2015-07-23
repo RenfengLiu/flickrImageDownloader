@@ -1,2 +1,51 @@
-apple
-sandwich
+#http://travel.cnn.com/explorations/eat/best-usa-travel/top-50-american-foods-513946
+Thanksgiving dinner
+Cheeseburger
+Reuben sandwich
+Hot dogs
+Philly cheese steak
+Nachos
+Chicago-style pizza
+Delmonico’s steak
+Blueberry cobbler
+Chocolate-chip cookies
+Green chili stew
+Po’ boy
+Frito pie
+Apple pie
+BLT
+Barbecue ribs
+Indian frybread
+Buffalo wings
+Lobster rolls
+S’mores
+New Mexican flat enchiladas
+New England clam chowder
+Fried chicken and waffles
+Popcorn
+Baked beans
+Peanut butter sandwich
+Fortune cookies
+Cioppino
+Potato chips
+Maryland crabcakes
+Macaroni and cheese
+Grits
+Meatloaf
+California roll
+Wild Alaska salmon
+Chicken fried steak
+Smithfield ham
+Biscuits ’n’ gravy
+Jambalaya
+GORP
+Cornbread
+Banana split
+Fajitas
+Jerky
+Twinkies
+Pot roast
+Cobb salad
+San Francisco sourdough bread
+Tater tots
+Key lime pie
